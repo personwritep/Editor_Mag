@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Editor Mag ⭐
 // @namespace        http://tampermonkey.net/
-// @version        0.1
+// @version        0.2
 // @description        ブログ編集画面の「編集枠」のみを拡大表示する
 // @author        Ameba Blog User
 // @match        https://blog.ameba.jp/ucs/entry/srventry*
@@ -29,6 +29,7 @@ let cont=
     '#zoom_cont:hover { opacity: 1; }'+
     '#z_con { font: 16px Meiryo; width: 50px; height: 22px; padding: 2px 2px 0 4px; '+
     'border: 1px solid #aaa; border-radius: 3px; background: #fff; }'+
+    '#z_con::-webkit-inner-spin-button { height: 18px; margin-top: 2px; }'+
     '</style></div>';
 
 if(!document.querySelector('#zoom_cont')){
