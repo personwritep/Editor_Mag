@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Editor Mag ⭐
 // @namespace        http://tampermonkey.net/
-// @version        0.2
+// @version        0.3
 // @description        ブログ編集画面の「編集枠」のみを拡大表示する
 // @author        Ameba Blog User
 // @match        https://blog.ameba.jp/ucs/entry/srventry*
@@ -24,7 +24,7 @@ let cont=
     '<div id="zoom_cont">'+
     '<input id="z_con" type="number" min="100" max="160" step="5">'+
     '<style>'+
-    '#zoom_cont { position: absolute; top: 5px; right: 184px; opacity: 0; '+
+    '#zoom_cont { position: absolute; top: 5px; right: 224px; opacity: 0; '+
     'transition: .4s; transition-timing-function: ease-in-out; }'+
     '#zoom_cont:hover { opacity: 1; }'+
     '#z_con { font: 16px Meiryo; width: 50px; height: 22px; padding: 2px 2px 0 4px; '+
