@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name        Editor Mag ⭐
 // @namespace        http://tampermonkey.net/
-// @version        0.3
+// @version        0.4
 // @description        ブログ編集画面の「編集枠」のみを拡大表示する
 // @author        Ameba Blog User
-// @match        https://blog.ameba.jp/ucs/entry/srventry*
-// @exclude        https://blog.ameba.jp/ucs/entry/srventrylist*
+// @match        https://blog.ameba.jp/ucs/entry/srventryinsertinput.do*
+// @match        https://blog.ameba.jp/ucs/entry/srventryupdateinput.do*
 // @icon        https://www.google.com/s2/favicons?sz=64&domain=ameba.jp
 // @grant        none
 // @updateURL        https://github.com/personwritep/Editor_Mag/raw/main/Editor_Mag.user.js
