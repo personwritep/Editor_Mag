@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Editor Mag ⭐
 // @namespace        http://tampermonkey.net/
-// @version        0.4
+// @version        0.5
 // @description        ブログ編集画面の「編集枠」のみを拡大表示する
 // @author        Ameba Blog User
 // @match        https://blog.ameba.jp/ucs/entry/srventryinsertinput.do*
@@ -81,9 +81,9 @@ function main(cke){
 
 
 
-    z_con.addEventListener('input', function(){
+    z_con.oninput=()=>{
         em_zoom=z_con.value;
         style_in();
-        localStorage.setItem('EditorMag', em_zoom); }); // 拡大率を登録 🔵
+        localStorage.setItem('EditorMag', em_zoom); } // 拡大率を登録 🔵
 
 } // main()
